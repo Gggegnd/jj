@@ -39,9 +39,9 @@ async def amireallyalive(event):
         PIC = random.choice(A_IMG)
         cat_caption = f"𝐷𝑅𝐴𝐶𝑂𝑁 𝑈𝑆𝐸𝑅𝐵𝑂𝑇\n"
         cat_caption += f"✛━━━━━━━━━━━━━✛\n"
-        cat_caption += f"- مطور سورس الحفرة  :  @RR9R7\n"
-        cat_caption += f"- مبرمج السورس الحفرة :  @SBB_B\n"
-        cat_caption += f"- مبرمج السورس      :  @GGGNE\n"
+        cat_caption += f"- مطور سورس الحفرة  :  @a_bd80\n"
+        cat_caption += f"- مبرمج السورس الحفرة :  @elichego\n"
+        cat_caption += f"- مبرمج السورس      :  @e1o_1\n"
         cat_caption += f"✛━━━━━━━━━━━━━✛\n"
         await event.client.send_file(
             event.chat_id, PIC, caption=cat_caption, reply_to=reply_to_id
