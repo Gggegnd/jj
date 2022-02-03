@@ -65,7 +65,7 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/e9cd63140ffaba419db6b.jpg",
+                "https://telegra.ph/file/434e495dc1997bf4a343d.jpg",
                 caption="✵│**بــوت الحفرة يـعـمـل بـنـجـاح**  ✅ \n✵│**قـنـاة الـسـورس**  :  @alhufra3\n✵│**شروحات السورس**  :  @D_racon4\n✵│**قـنـاة الفارات**  :  @D_racon6\n✵│**قـنـاة الكلايش**  :  @D_racon7\n✵│**قـنـاة الاوامر**  :  @D_racon5\n✵│**كروب المساعده**  :  @a_bdui90\n✵│**مطور السورس**  :  @a_bd80\n✵│**مبرمج السورس⒈**  :  @e1o_2\n✵│**مبرمج السورس⒉**  :  @elichego\n✵│**المساعد**  :  @MTYU62",
                 buttons=[(Button.url("✵ كروب الحفرة ✵", "https://t.me/a_bdui90"),)],
             )
