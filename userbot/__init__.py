@@ -8,23 +8,23 @@ from .core.session import jmthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "1.0.0"
-__license__ = "🇹🇷 كـتابة وتـعديل فريـق الحفرة"
-__author__ = "الحفرة <https://T.ME/JMTHON>"
+__license__ = "كـتابة وتـعديل فريـق جيمس"
+__author__ = "جيمس <https://T.ME/JMTHON>"
 __copyright__ = "JMTHON TEAM (C) 2020 - 2021  " + __author__
 
 jmthon.version = __version__
 jmthon.tgbot.version = __version__
-LOGS = logging.getLogger("الحفرة")
+LOGS = logging.getLogger("جيمس")
 bot = jmthon
 
 StartTime = time.time()
 JMVERSION = "5.2.0"
 
 
-if Config.UPSTREAM_REPO == "alhufraui":
-    UPSTREAM_REPO_URL = "https://github.com/alhufra/alhufra80"
-elif Config.UPSTREAM_REPO == "alhufraui":
-    UPSTREAM_REPO_URL = "https://github.com/alhufra/alhufra80"
+if Config.UPSTREAM_REPO == "رمز السورس":
+    UPSTREAM_REPO_URL = "https://github.com/alhufra/ريبو"
+elif Config.UPSTREAM_REPO == "رمز السورس":
+    UPSTREAM_REPO_URL = "https://github.com/alhufra/ريبو"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
