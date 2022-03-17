@@ -66,8 +66,8 @@ async def startupmessage():
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/434e495dc1997bf4a343d.jpg",
-                caption="✵│**بــوت الحفرة يـعـمـل بـنـجـاح**  ✅ \n✵│**قـنـاة الـسـورس**  :  @alhufra3\n✵│**شروحات السورس**  :  @D_racon4\n✵│**قـنـاة الفارات**  :  @D_racon6\n✵│**قـنـاة الكلايش**  :  @D_racon7\n✵│**قـنـاة الاوامر**  :  @D_racon5\n✵│**كروب المساعده**  :  @a_bdui90\n✵│**مطور السورس**  :  @a_bd80\n✵│**مبرمج السورس⒈**  :  @e1o_2\n✵│**مبرمج السورس⒉**  :  @elichego\n✵│**المساعد**  :  @MTYU62",
-                buttons=[(Button.url("✵ كروب الحفرة ✵", "https://t.me/a_bdui90"),)],
+                caption="✵│**بــوت جيمس يـعـمـل بـنـجـاح**  ✅ \n✵│**قـنـاة الـسـورس**  :  @alhufra3\n✵│**شروحات السورس**  :  @D_racon4\n✵│**قـنـاة الفارات**  :  @D_racon6\n✵│**قـنـاة الكلايش**  :  @D_racon7\n✵│**قـنـاة الاوامر**  :  @D_racon5\n✵│**كروب المساعده**  :  @a_bdui90\n✵│**مطور السورس**  :  @a_bd80\n✵│**مبرمج السورس⒈**  :  @e1o_2\n✵│**مبرمج السورس⒉**  :  @elichego\n✵│**المساعد**  :  @MTYU62",
+                buttons=[(Button.url("✵ كروب جيمس ✵", "https://t.me/"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -85,7 +85,7 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**✵│اهلا وسهلا لقد قمت باعاده تشغيل بـوت الحفرة تمت بنجاح**"
+                + "\n\n**✵│اهلا وسهلا لقد قمت باعاده تشغيل بـوت جيمس تمت بنجاح**"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
@@ -183,16 +183,16 @@ async def load_plugins(folder):
 
 async def autojo():
     try:
-        await jmthon(JoinChannelRequest("@alhufr_a"))
+        await jmthon(JoinChannelRequest("@iqcora"))
         if gvar("AUTOEO") is False:
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@alhufr_a"))
+                await jmthon(JoinChannelRequest("@iqcora"))
             except BaseException:
                 pass
             try:
-                await jmthon(JoinChannelRequest("@a_bd80"))
+                await jmthon(JoinChannelRequest("@iqcora"))
             except BaseException:
                 pass
     except BaseException:
@@ -201,16 +201,16 @@ async def autojo():
 
 async def autozs():
     try:
-        await jmthon(JoinChannelRequest("@e1o_1"))
+        await jmthon(JoinChannelRequest("@iqcora"))
         if gvar("AUTOZS") is False:
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@alhufr_a"))
+                await jmthon(JoinChannelRequest("@iqcora"))
             except BaseException:
                 pass
             try:
-                await jmthon(JoinChannelRequest("@a_bd80"))
+                await jmthon(JoinChannelRequest("@iqcora"))
             except BaseException:
                 pass
     except BaseException:
@@ -246,10 +246,10 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @alhufr_a"
+        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @jmthon"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/alhufraui.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة اشعارات الحفرة 🇹🇷", jmthon, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة اشعارات جيمس", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("⌯︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -275,10 +275,10 @@ async def verifyLoggerGroup():
                 "⌯︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
             )
     else:
-        descript = "⌯︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @alhufr_a"
+        descript = "⌯︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @JMTHON"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/alhufraui.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة التخزين الحفرة 🇹🇷", jmthon, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة التخزين جيمس ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تـم عمـل الكروب التخزين بنـجاح واضافة الـفارات الـيه.")
