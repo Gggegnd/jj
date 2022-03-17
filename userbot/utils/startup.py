@@ -66,7 +66,7 @@ async def startupmessage():
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/434e495dc1997bf4a343d.jpg",
-                caption="✵│**بــوت جيمس يـعـمـل بـنـجـاح**  ✅ \n✵│**قـنـاة الـسـورس**  :  @alhufra3\n✵│**شروحات السورس**  :  @D_racon4\n✵│**قـنـاة الفارات**  :  @D_racon6\n✵│**قـنـاة الكلايش**  :  @D_racon7\n✵│**قـنـاة الاوامر**  :  @D_racon5\n✵│**كروب المساعده**  :  @a_bdui90\n✵│**مطور السورس**  :  @a_bd80\n✵│**مبرمج السورس⒈**  :  @e1o_2\n✵│**مبرمج السورس⒉**  :  @elichego\n✵│**المساعد**  :  @MTYU62",
+                caption="✵│**بــوت جيمس يـعـمـل بـنـجـاح**  ✅ \n✵",
                 buttons=[(Button.url("✵ كروب جيمس ✵", "https://t.me/"),)],
             )
     except Exception as e:
