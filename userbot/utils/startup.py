@@ -65,9 +65,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/434e495dc1997bf4a343d.jpg",
-                caption="✵│**بــوت جيمس يـعـمـل بـنـجـاح**  ✅ \n✵",
-                buttons=[(Button.url("✵ كروب جيمس ✵", "https://t.me/"),)],
+                "https://telegra.ph/file/7d4bb5c46670a611bb578.jpg",
+                caption="✵│**بــوت جيمس يـعـمـل بـنـجـاح** ✅",
+                buttons=[(Button.url("✵ كروب جيمس ✵", "https://t.me/iqcora"),)],
             )
     except Exception as e:
         LOGS.error(e)
