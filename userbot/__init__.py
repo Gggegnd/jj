@@ -21,10 +21,10 @@ StartTime = time.time()
 JMVERSION = "5.2.0"
 
 
-if Config.UPSTREAM_REPO == "رمز السورس":
-    UPSTREAM_REPO_URL = "https://github.com/alhufra/ريبو"
-elif Config.UPSTREAM_REPO == "رمز السورس":
-    UPSTREAM_REPO_URL = "https://github.com/alhufra/ريبو"
+if Config.UPSTREAM_REPO == "jemsiq":
+    UPSTREAM_REPO_URL = "https://github.com/Gggegnd/jj"
+elif Config.UPSTREAM_REPO == "jemsiq":
+    UPSTREAM_REPO_URL = "https://github.com/Gggegnd/jj"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
