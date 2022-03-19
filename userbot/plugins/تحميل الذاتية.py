@@ -9,7 +9,7 @@ from userbot import *
 from userbot import jmthon
 from ..Config import Config
 
-JMTHON_CMD = Config.SCPIC_CMD or "جلب الصورة"
+JMTHON_CMD = Config.SCPIC_CMD or "تحمل"
 
 @jmthon.on(admin_cmd(pattern=f"{JMTHON_CMD}"))
 async def dato(event):
@@ -23,7 +23,6 @@ async def dato(event):
         caption=f"""
 -تـم جـلب الصـورة بنجـاح ✅
 - CH: @Jmthon
-- Dev: @RR9R7
   """,
     )
-    await event.edit("احاا")
+    await event.edit("نت")
