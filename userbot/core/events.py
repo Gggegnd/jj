@@ -177,7 +177,7 @@ async def send_message(
                 comment_to=comment_to,
             )
         msglink = await client.get_msg_link(response)
-        msg = f"خاب مشكلة مادري منين المهم طب ع هل كروب وكسمك __[Bot log group]({msglink})."
+        msg = f". __[Bot log group]({msglink})."
         return await client.sendmessage(
             entity=chatid,
             message=msg,
