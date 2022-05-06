@@ -30,7 +30,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت جيمس يعـمل بنـجـاح **"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت J يعـمل بنـجـاح **"
     RR7_IMG = gvarstatus("ALIVE_PIC")
     jmthon_caption = gvarstatus("ALIVE_TEMPLATE") or temp
     caption = jmthon_caption.format(
@@ -68,7 +68,7 @@ temp = """- {ALIVE_TEXT}
 
 **{EMOJI} قاعدۿ البيانات :** تعمل بنـجاح
 **{EMOJI} أصـدار التـيليثون :** `{telever}`
-**{EMOJI} أصـدار جيمس :** `{jmver}`
+**{EMOJI} أصـدار J :** `{jmver}`
 **{EMOJI} الوقت:** `{uptime}` 
 **{EMOJI} أصدار البـايثون :** `{pyver}`
 **{EMOJI} المسـتخدم:** {mention}"""
