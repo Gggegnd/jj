@@ -6,7 +6,7 @@ from . import *
 @jmthon.on(admin_cmd(pattern="نشر_تلقائي ?(.*)"))
 async def _(event):
     if (event.is_private or event.is_group):
-        return await edit_or_reply(event, "**- النشر التلقائي فقط للقنوات .")
+        return await edit_or_reply(event, "**- النشر التلقائي فقط للقنوات .**")
     trz_ = event.pattern_match.group(1)
     if str(trz_).startswith("-100"):
         jm = str(trz_).replace("-100", "")
@@ -15,7 +15,7 @@ async def _(event):
     if not jm.isdigit():
         return await edit_or_reply(event, "**يجب عليك وضع ايدي القناه اولا**")
     if is_post(jm , event.chat_id):
-        return await edit_or_reply(event, "- تم تفعيل النشر لهذه القناه هنا بنجاح ✓")
+        return await edit_or_reply(event, "**- تم تفعيل النشر لهذه القناه هنا بنجاح ✓**")
     add_post(jm, event.chat_id)
     await edit_or_reply(event, f"**- يتم بدء النشر التلقائي من ** `{trz_}`")
 
@@ -32,7 +32,7 @@ async def _(event):
     if not jm.isdigit():
         return await edit_or_reply(event, "**جب عليك وضع ايدي القناه اولا**")
     if not is_post(jm, event.chat_id):
-        return await edit_or_reply(event, "- تم تعطيل النشر لهذه القناه هن بنجاح ✓.")
+        return await edit_or_reply(event, "**- تم تعطيل النشر لهذه القناه هن بنجاح ✓.**")
     remove_post(jm, event.chat_id)
     await edit_or_reply(event, f"**- تم ايقاف النشر من ** `{trz_}`")
 
